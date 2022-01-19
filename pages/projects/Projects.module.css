@@ -1,0 +1,10 @@
+/* Projects */
+.around {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
