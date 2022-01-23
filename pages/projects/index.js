@@ -8,41 +8,23 @@ import React from 'react'
 export default function Projects() {
     var projects = 
     [
-        {
-            "name": "SlashPack",
-            "desc": "Urls to subprojects",
-            "version": "v1.2.0"
-        }
+        { "name": "SlashPack", "desc": "URLs to subprojects", "version": "v1.2.0" }
     ]
     var future = 
     [
-        {
-            "name": "LagScope",
-            "desc": "Small APIs for developers"
-        },
-        {
-            "name": "Crash",
-            "desc": "A multi-purpose programming language"
-        },
+        { "name": "LagScope", "desc": "Small APIs for developers" },
+        { "name": "Crash", "desc": "A multi-purpose programming language" },
     ]
 
     var subprojects = 
     [
-        {
-            "name": "CSS Shortcuts",
-            "desc": "CSS shortcuts by class names",
-            "version": "v1.1.5",
-            "from": "Slash"
-        }
+        { "name": "CSS Shortcuts", "desc": "CSS shortcuts by class names", "version": "v1.1.5", "from": "Slash" }
     ]
     var futuresub = 
     [
-        {
-            "name": "SmoothLS",
-            "desc": "Make your page smoother",
-            "from": "LagScope"
-
-        }
+        { "name": "SmoothLS", "desc": "Make your page smoother", "from": "LagScope" },
+        { "name": "Crystal", "desc": "The Crash Node.js", "from": "Crash" },
+        { "name": "Glitch", "desc": "The Crash's JSON", "from": "Crash" }
     ]
     return (
         <>
