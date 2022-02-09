@@ -3,44 +3,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import React from 'react'
+import konu from '../public/Konu.png'
 
 function Blog({ posts }) {
+  const myLoader = ({ src, width, quality }) => {
+    return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+  }
   return (
     <div>
       <Head><title>Slash</title></Head>
-      <div className={styles.cards}>
+      <div className={styles.home}>
+        <div className={styles.hero}>Hello</div>
         <div>
-          {posts.map(function(key, idx) { 
-            return (
-              <card className={idx}>
-                <div className={styles.cardcontent}>
-                  <div className={styles.titles}>
-                    <div className={styles.subtitle}>
-                        {key.subtitle}
-                    </div>
-                    <div className={styles.title}>
-                      {key.title}
-                    </div>
-                </div>
-            </div>
-        </card>
-      )
-      })}
+          Welcome to Slash Develop (SlashDEV)
         </div>
+        <Image loader={myLoader} src={konu} width={100} height={100}></Image>
       </div>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const res = await fetch('https://raw.githubusercontent.com/isplashy/post/main/post.json')
-  const posts = await res.json()
-
-  return {
-    props: {
-      posts,
-    }
-  }
 }
 
 export default Blog

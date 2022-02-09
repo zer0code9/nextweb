@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-  .nav {
-    background: white;
-    color: black;
-    width: 100vw;
-    padding: 10px 0 10px 0;
-    box-shadow: rgb(0, 0, 0, 0.6) 0 2px 15px;
-    position: absolute;
-    top: 0;
+.nav {
+  background: white;
+  color: black;
+  width: 100vw;
+  padding: 10px 0 10px 0;
+  box-shadow: rgb(0, 0, 0, 0.6) 0 2px 15px;
+  position: absolute;
+  top: 0;
 }
 .navItems {
   display: flex;
@@ -19,6 +20,7 @@
 .appname:hover {cursor: pointer;}
 .appnav {
   font-size: 50px;
+  cursor: pointer;
 }
 .tabnav {
   font-size: 40px;
@@ -182,6 +184,21 @@ color: darkred;
   }
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  margin: 20px;
+}
+.hero {
+  background-color: black;
+  width: 75%;
+  height: 50px;
+}
+
 
 .cardcontent {
   color: black;
@@ -200,9 +217,16 @@ color: darkred;
 .title {
   font: bold;
 }
-.cards {
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 30px;
-  margin: 20px;
+
+
+.err4r {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  
+}
+.err4rmsg {
+  font-size: 100px;
+  font-family: Source Code Pro;
 }

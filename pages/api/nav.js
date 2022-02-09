@@ -1,6 +1,7 @@
 import styles from '../../styles/Home.module.css'
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import {useEffect} from "react"
 
 export default function Nav() {
@@ -9,6 +10,7 @@ export default function Nav() {
         <nav className={styles.nav}>
             <div className={styles.navItems}>
                 <div className={styles.appnav}>
+                    <Image src="/slash/public/Konu.png" width={10} height={10}></Image>
                     <Link href="/"><span className={styles.appname}>Slash</span></Link>
                 </div> 
                 <div className={styles.tabnav}>
@@ -20,7 +22,7 @@ export default function Nav() {
         </nav>
         <mobilenav class="mobtab">
             <div className={styles.side}>
-                <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
             </div>
         </mobilenav>
         </>

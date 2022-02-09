@@ -2,6 +2,10 @@ import styles from '../../styles/Home.module.css'
 import React from 'react'
 import {useEffect} from "react"
 
+function support() {
+    
+}
+
 export default function Footer() {
     return (
         <>
@@ -17,8 +21,8 @@ export default function Footer() {
             </div>
         </div>
         <div className={styles.supportFooter}>
-            <div className={[styles.footerBtn, styles.supportBtn].join(" ")}><span>Support</span><i></i></div>
-            <div className={[styles.footerBtn, styles.subscribeBtn].join(" ")}><span>Subscribe</span><i></i></div>
+            <button className={[styles.footerBtn, styles.supportBtn].join(" ")}><span>Support</span><i></i></button>
+            <button className={[styles.footerBtn, styles.subscribeBtn].join(" ")}><span>Subscribe</span><i></i></button>
         </div>
         <div className={styles.about}>
             <span>Created & Powered by SlashDEV</span>
