@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import '../styles/globals.css'
-import Nav from './api/nav.js'
+import Nav from './api/nav'
 import Footer from './api/footer'
 
 function MyApp({ Component, pageProps }) {

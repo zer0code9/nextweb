@@ -3,29 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 .nav {
-  background: white;
-  color: black;
-  width: 100vw;
-  padding: 10px 0 10px 0;
-  box-shadow: rgb(0, 0, 0, 0.6) 0 2px 15px;
-  position: absolute;
-  top: 0;
+  background: rgb(24, 23, 23);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  margin-bottom: 20px;
 }
 .navItems {
   display: flex;
   align-items: center;
-  font-size: 50px;
+  font-size: 30px;
   padding: 10px;
 }
 .appname:hover {cursor: pointer;}
 .appnav {
-  font-size: 50px;
+  font-size: 30px;
   cursor: pointer;
 }
 .tabnav {
-  font-size: 40px;
   display: flex;
-  min-width: 400px;
   padding-left: 10px;
   transition: 0.5s;
 }
@@ -51,19 +51,32 @@
   width: 80px;
   height: 80px;
 }
+
 /*Tabs*/
-.tab:hover, .side a:hover {
-  color: red;
-  cursor: pointer;
-}
-.side a, .tab {
+.tab {
+  font-size: 20px;
+  margin: 5px 10px 0 0;
+  color: white;
+  position: relative;
+  transition: 0.9s ease;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
   display: block;
-  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.tab::after {
+  content: '';
+  border-bottom: 3px solid;
+  color: white;
+  position: absolute;
+  width: 6%;
+  height: 38px;
+  transition: 0.9s ease;
+}
+.tab:hover { color: red; }
+.tab:hover::after { width: calc(80%); color:red; }
 .tab-nav>.current {
 color: darkred;
 }
@@ -111,48 +124,34 @@ color: darkred;
   height: 30vh;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Footer*/
 .footer {
-  background-color: white;
+  background: rgb(24, 23, 23);
+  color: white;
   display: flex;
   justify-content: center;
   padding: 30px 0 30px 0;
   margin-top: 15px;
   width: 100%;
-  box-shadow: rgb(0, 0, 0, 0.6) 0 4px 15px;
 }
 .footerItems {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align:start;
   padding: 10px;
-}
-.supportFooter {
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
-  padding: 10px 0 10px 0;
-}
-.supportBtn {
-  border: solid 1px palevioletred;
-  background: pink;
-}
-.supportBtn:hover {cursor: pointer;}
-.subscribeBtn {
-  border: solid 1px darkred;
-  background: red;
-}
-.subscribeBtn:hover {cursor: pointer;}
-.footerBtn {
-  padding: 13px;
-  border-radius: 70px;
   font-size: 15px;
-  display: flex;
-  justify-content: space-around;
+}
+.footerItems > a {
+  padding: 5px;
+}
+.footerItems > a:hover {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .about {
-  background-color: whitesmoke;
+  background-color: black;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -195,10 +194,27 @@ color: darkred;
 }
 .hero {
   background-color: black;
+  text-align: center;
   width: 75%;
   height: 50px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 270px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  overflow: hidden;
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+}
+.card:hover {
+  transform: scale(1.02);
+}
 
 .cardcontent {
   color: black;
@@ -217,7 +233,6 @@ color: darkred;
 .title {
   font: bold;
 }
-
 
 .err4r {
   display: flex;

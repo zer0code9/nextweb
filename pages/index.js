@@ -15,7 +15,7 @@ function Blog({ posts }) {
       <div className={styles.home}>
         <div className={styles.hero}>Hello</div>
         <div>
-          Welcome to Slash Develop (SlashDEV)
+          Welcome to Slash
         </div>
         <Image loader={myLoader} src={konu} width={100} height={100}></Image>
       </div>

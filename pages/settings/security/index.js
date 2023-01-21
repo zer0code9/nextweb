@@ -21,18 +21,15 @@ export default function AccountPage() {
           <div className={style.meDataArea}>
             <strong className={style.titleData}>Account</strong><hr />
             <div className="meData">
+
               <div className={style.settingArea}>
                 <strong>Password</strong>
-                <input type="button" value="Change" className={style.input} />
-                <div class="h6">Your display name is the name that others will see you as. If left empty, your username will be your display name</div>
-              </div>
-              <div className={style.settingArea}>
-                  <strong>2-Factor Login</strong>
-                  <input type="button" value="Apply" className={style.input} />
+                <input type="button" value="Change Password" className={style.button} />
               </div>
 
-              <div>
-                <button type="submit" className={[style.saveProfile, style.button].join(" ")}>Save Account</button>
+              <div className={style.settingArea}>
+                <strong>2-Factor Login</strong>
+                <input type="button" value="Apply" className={style.button} />
               </div>
             </div>
           </div>

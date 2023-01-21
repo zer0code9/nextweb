@@ -1,7 +1,8 @@
 /*Settings*/
 .h6 {font-size: small;}
 .settings {
-    background-color: whitesmoke;
+    background-color: rgb(24, 23, 23);
+    color: white;
     display: flex;
     justify-content: center;
 }
@@ -11,31 +12,26 @@
     margin-left: 5%;
 }
 .contentArea {
-    background-color: whitesmoke;
+    background-color: transparent;
     border-radius: 10px;
-    border: solid 1px black;
     width: 10%;
     height: 10%;
 }
 .setting {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px white;
     padding: 10px;
 }
 
 .content>.cont {
-    border-bottom: solid 1px black;
     padding: 10px;
 }
-.links:hover {
-    transform: translateX(6px);
+.content>.cont:hover {
+    opacity: 0.8;color: red;cursor: pointer;
 }
-.content>.last {
-    padding: 10px;
-    border-bottom: 0;
+.content>.current {
+    border-left: ridge 1px darkred;
+    color: darkred;
 }
-.content>.cont:hover {opacity: 0.8;color: red;cursor: pointer;}
-.content>.current {border-left: ridge 2px red;text-align: center;}
-.content>.current:hover {opacity: unset;color: unset;cursor:default;}
 
 .meDataArea {
     margin-left: 20px;
@@ -50,34 +46,44 @@
 .input {
       width: 25vh;
       padding: 7px;
+      margin: 4px;
       border: 0;
-      border-radius: 100px;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
       border: solid 1px lightgray;
       font-family: "Goldman";
       outline: 0;
       box-shadow: rgb(0, 0, 0, 0.6) 0 1px 1px;
 }
 .input:focus {
-    padding: 13px;
+    border: solid 1px red;
 }
 .button {
-    width: 8vh;
+    width: 25vh;
     padding: 7px;
+    margin: 4px;
     border: 0;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: solid 1px lightgray;
+    font-family: "Goldman";
     outline: 0;
-    box-shadow: rgb(0, 0, 0, 0.6) 0 2px 15px;
+    box-shadow: rgb(0, 0, 0, 0.6) 0 1px 1px;
     cursor: pointer;
-    border-radius: 100px;
+}
+.button:hover {
+    border: solid 1px red;
 }
 .saveProfile, .saveAccount {
-    background-color: #8c8b88;
-    color: black;
+    background-color: rgb(5, 182, 5);
+    color: white;
     padding: 16px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100px;
-    border-radius: 100px;
+    border-radius: 10px;
     font-family: "Goldman";
     outline: 0;
 }

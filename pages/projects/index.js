@@ -35,7 +35,7 @@ export default function Projects() {
                 <div>Projects</div>
                 {projects.map(function(key, idx) { 
                     return (
-                        <card className={idx}>
+                        <div className={[idx+1] && styles.card}>
                             <div className={styles.cardcontent}>
                                 <div className={styles.titles}>
                                     <div className={styles.title}>{key.name}</div>
@@ -43,7 +43,7 @@ export default function Projects() {
                                     <div className={styles.credits}>{key.version}</div>
                                 </div>
                             </div>
-                        </card>
+                        </div>
                     )
                 })}
             </div>
@@ -51,14 +51,14 @@ export default function Projects() {
                 <div>Future Projects</div>
                 {future.map(function(key, idx) { 
                     return (
-                        <card className={idx}>
+                        <div className={[idx+1] && styles.card}>
                             <div className={styles.cardcontent}>
                                 <div className={styles.titles}>
                                     <div className={styles.title}>{key.name}</div>
                                     <div className={styles.subtitle}>{key.desc}</div>
                                 </div>
                             </div>
-                        </card>
+                        </div>
                     )
                 })}
             </div>
@@ -68,7 +68,7 @@ export default function Projects() {
                 <div>Subprojects</div>
                 {subprojects.map(function(key, idx) { 
                     return (
-                        <card className={idx}>
+                        <div className={[idx+1] && styles.card}>
                             <div className={styles.cardcontent}>
                                 <div className={styles.titles}>
                                     <div className={styles.title}>{key.name}</div>
@@ -77,7 +77,7 @@ export default function Projects() {
                                     <span className={styles.credits}>From {key.from}</span>
                                 </div>
                             </div>
-                        </card>
+                        </div>
                     )
                 })}
             </div>
@@ -85,7 +85,7 @@ export default function Projects() {
                 <div>Future Subprojects</div>
                 {futuresub.map(function(key, idx) { 
                     return (
-                        <card className={idx}>
+                        <div className={[idx+1] && styles.card}>
                             <div className={styles.cardcontent}>
                                 <div className={styles.titles}>
                                     <div className={styles.title}>{key.name}</div>
@@ -93,7 +93,7 @@ export default function Projects() {
                                     <div className={styles.credits}>From {key.from}</div>
                                 </div>
                             </div>
-                        </card>
+                        </div>
                     )
                 })}
             </div>

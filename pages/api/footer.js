@@ -11,22 +11,19 @@ export default function Footer() {
         <>
         <div className={styles.footer}>
             <div className={styles.footerItems}>
-                <h2>Other Projets</h2>
-                <a>None Yet :(</a>
+                <a>SlashDEV</a>
+                <a>SlashSEC</a>
+                <a>SlashART</a>
             </div>
             <div className={styles.footerItems}>
-                <h2>Company</h2>
                 <a>About</a>
                 <a>Privacy</a>
+                <a>Security</a>
             </div>
         </div>
-        <div className={styles.supportFooter}>
-            <button className={[styles.footerBtn, styles.supportBtn].join(" ")}><span>Support</span><i></i></button>
-            <button className={[styles.footerBtn, styles.subscribeBtn].join(" ")}><span>Subscribe</span><i></i></button>
-        </div>
         <div className={styles.about}>
-            <span>Created & Powered by SlashDEV</span>
-            <span>&copy; SlashDEV, Inc.</span>
+            <span>Created & Powered by Slash</span>
+            <span>&copy; Slash</span>
         </div>
         </>
     )

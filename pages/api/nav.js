@@ -11,16 +11,16 @@ export default function Nav() {
             <div className={styles.navItems}>
                 <div className={styles.appnav}>
                     <Image src="/slash/public/Konu.png" width={10} height={10}></Image>
-                    <Link href="/"><span className={styles.appname}>Slash</span></Link>
+                    <Link href="/"><span className={styles.appname}>SLASH</span></Link>
                 </div> 
                 <div className={styles.tabnav}>
-                    <Link href="/projects"><a className={styles.comtab, styles.tab}>Projects</a></Link>
-                    <Link href="/settings/profile"><a className={styles.comtab, styles.tab}>Profile</a></Link>
+                    <Link href="/projects"><a className={styles.comtab && styles.tab}>projects</a></Link>
+                    <Link href="/settings/profile"><a className={styles.comtab && styles.tab}>settings</a></Link>
                 </div>
                 <div className={styles.accountnav}></div>
             </div>
         </nav>
-        <mobilenav class="mobtab">
+        <mobilenav className="mobtab">
             <div className={styles.side}>
             <br /><br /><br /><br /><br /><br />
             </div>
